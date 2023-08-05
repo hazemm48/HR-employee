@@ -1,0 +1,173 @@
+:root {
+  --grey-color: #8997a4;
+  --light-blue-color: #23aaeb;
+  --dark-blue-color: #2764ac;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  height: 100vh;
+}
+
+.main-content {
+  background-color: #f7f8f9;
+  padding: 2em;
+}
+
+nav img {
+  width: 2em;
+  border: 1px solid white;
+}
+
+.navBtn {
+  background-color: #27b40c;
+  color: white;
+}
+.notification i {
+  border-left: 1px solid var(--grey-color);
+  border-right: 1px solid var(--grey-color);
+  color: var(--grey-color);
+}
+
+.search .btn {
+  background-color: var(--dark-blue-color);
+}
+
+/* employee card */
+
+.employee-card {
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.09);
+  border: solid 1px #eaeef0;
+  border-radius: 2px;
+}
+
+.employee-card .left i {
+  color: var(--grey-color);
+}
+
+.employee-card .right i {
+  background-color: #eaeef0;
+  color: #313030;
+  border-radius: 50%;
+}
+
+.employee-card label {
+  border-radius: 2px;
+  width: auto;
+}
+
+/* employee absence colors */
+
+.label-green {
+  background-color: #28b40c36;
+  color: #27b40c;
+}
+.label-blue {
+  background-color: #2765ac40;
+  color: var(--dark-blue-color);
+}
+.label-light-blue {
+  background-color: #23a8eb36;
+  color: var(--light-blue-color);
+}
+.label-red {
+  background-color: #ff6a6a3b;
+  color: #ff6a6a;
+}
+.label-grey {
+  background-color: #8997a436;
+  color: var(--grey-color);
+}
+
+/* side bar styles */
+
+.sideBar {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-image: linear-gradient(to bottom, #39a4dc, #2763ab);
+  height: auto;
+}
+
+.sideBar i {
+  color: white;
+  font-size: 2em;
+}
+
+.sideBar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sideBar li {
+  padding: 1em 0.5em;
+}
+
+.sideBar .active,
+.sideBar li:hover {
+  background-color: var(--dark-blue-color);
+  border-left: 5px solid #59c203;
+}
+
+/* form styles */
+
+.form {
+  position: absolute;
+  top: 0;
+  z-index: 1021;
+  background-color: rgba(40, 104, 174, 0.43);
+  backdrop-filter: blur(3px);
+}
+
+.form form {
+  border-radius: 4px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.form .head {
+  color: var(--light-blue-color);
+  border-bottom: 2px solid var(--light-blue-color);
+}
+
+.form-img {
+  border-style: dashed;
+  border-color: var(--grey-color);
+  padding: 3em;
+  color: var(--grey-color);
+  text-align: center;
+}
+
+.form-img button {
+  border: none;
+  background-color: transparent;
+}
+
+.perInfo {
+  color: var(--light-blue-color);
+  font-weight: bold;
+}
+
+.perInfo hr {
+  margin: 0;
+  float: left;
+  width: 4%;
+  height: 10%;
+  background: var(--light-blue-color);
+}
+
+
+@media (min-width: 992px) {
+  .form {
+    padding: 12rem !important;
+  }
+}
+
+@media (min-width: 1650px) {
+  main .sideBar {
+    width: 5%;
+  }
+  main .main {
+    width: 95%;
+  }
+}
