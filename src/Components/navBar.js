@@ -1,9 +1,13 @@
-import React from "react";
-import manImg from "../SiteAssets/images/male.jpg";
+import React, { useEffect, useState } from "react";
+import manImg from "../SiteAssets/images/male.jpeg";
 import moment from "moment";
 
 const NavBar = () => {
-  let date = moment().format("dddd, MM MMM h:mm:ss A");
+  const [date,setDate] = useState()
+
+  useEffect(() => {
+    setInterval(() => setDate(moment().format("dddd, MM MMM h:mm:ss A")), 1000);
+  }, []);
 
   return (
     <nav className="navbar navbar-expand-lg sticky-top bg-white">
@@ -25,17 +29,17 @@ const NavBar = () => {
         >
           <div className="me-lg-5">{date}</div>
           <div className="mx-lg-3 my-2 my-lg-0">
-            <a className="btn navBtn rounded-3 px-4 main-btn">signIn</a>
+            <a className="btn navBtn rounded-3 py-0 px-4 main-btn">signIn</a>
           </div>
-          <div className="notification mx-lg-2 my-2 my-lg-0">
+          <div className="notification mx-lg-2 my-4 my-lg-0">
             <i className="fa-solid fa-bell px-2 position-relative fs-5">
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success" style={{fontSize:'0.6em'}}>
+              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success" style={{fontSize:'0.6em'}}>
                 3
               </span>
             </i>
           </div>
-          <div className="dropdown d-flex align-items-center my-2 my-lg-0">
-            <img className="nav-link mx-2 rounded-circle" src={manImg} />
+          <div className="dropdown d-flex align-items-center my-2 my-lg-0 ms-lg-3 ">
+            <img className="nav-link me-2 rounded-circle" src={manImg} />
             <a
               className="nav-link dropdown-toggle"
               role="button"

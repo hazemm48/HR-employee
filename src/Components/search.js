@@ -10,7 +10,7 @@ const Search = ({ setShowForm, setSearchData, employeeData }) => {
 
   return (
     <div className="search d-flex flex-nowrap row ">
-      <div className="col-7 col-lg-11">
+      <div className="col-8 col-lg-11">
         <div className="input-group ">
           <span
             className="input-group-text bg-white border-0"
@@ -30,10 +30,10 @@ const Search = ({ setShowForm, setSearchData, employeeData }) => {
         </div>
       </div>
       <button
-        className="btn btn-main btn-primary col-5 col-lg-1"
+        className="btn btn-primary col-4 col-lg-1 p-0 px-1 fs-6"
         onClick={() => setShowForm(true)}
       >
-        <i class="fa-solid fa-plus me-3" />
+        <i className="fa-solid fa-plus me-2" />
         Add new
       </button>
     </div>

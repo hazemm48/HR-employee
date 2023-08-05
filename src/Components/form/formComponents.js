@@ -16,7 +16,7 @@ const SelectField = ({ label, data, size }) => {
       <select className="form-select" name={label} required>
         <option selected disabled value=''>- Choose -</option>
         {data.map((e) => (
-          <option defaultValue={e}>{e}</option>
+          <option defaultValue={e} key={e}>{e}</option>
         ))}
       </select>
     </div>

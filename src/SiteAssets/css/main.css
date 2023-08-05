@@ -4,7 +4,7 @@
   --dark-blue-color: #2764ac;
 }
 
-body{
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -52,6 +52,15 @@ nav img {
   background-color: #eaeef0;
   color: #313030;
   border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.employee-card img{
+  max-width:4.5em;
+  max-height: 4.5em;
 }
 
 .employee-card label {
@@ -117,7 +126,10 @@ nav img {
   top: 0;
   z-index: 1021;
   background-color: rgba(40, 104, 174, 0.43);
+  -webkit-backdrop-filter: blur(3px);
+  -moz-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
+  
 }
 
 .form form {
@@ -156,7 +168,6 @@ nav img {
   background: var(--light-blue-color);
 }
 
-
 @media (min-width: 992px) {
   .form {
     padding: 12rem !important;
@@ -169,5 +180,19 @@ nav img {
   }
   main .main {
     width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .search button {
+    font-size: 0.8em !important;
+  }
+
+  .employee-card h4 {
+    font-size: 1em;
+  }
+
+  .employee-card label{
+    font-size: 0.8em;
   }
 }

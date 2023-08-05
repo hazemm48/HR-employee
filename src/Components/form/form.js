@@ -17,6 +17,7 @@ const Form = ({ setShowForm, setEmployeeData, employeesLength }) => {
       data[pair[0]] = pair[1];
     }
     setEmployeeData((e) => [...e, data]);
+    alert('employee added')
   };
 
   let btns = [
@@ -30,9 +31,7 @@ const Form = ({ setShowForm, setEmployeeData, employeesLength }) => {
       <form
         className="row g-3 bg-white px-4 py-2"
         id="form"
-        onSubmit={(e) => {
-          formSubmit(e);
-        }}
+        onSubmit={formSubmit}
       >
         <div className="fs-4 p-0 m-0 pb-2 head col-12">NEW EMPLOYEE</div>
         <FormHeader txt="Peronal Info" />

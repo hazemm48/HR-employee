@@ -10,14 +10,14 @@ const SideBar = () => {
   ];
   return (
     <div className="d-flex flex-column flex-shrink-0 col-2 col-md-1 sideBar">
-      <ul className="nav flex-column mb-auto text-center mt-5">
-        {data.map((e) => (
-          <li className={`nav-item ${e[1] == "employees" && "active"}`}>
+      <ul className="nav flex-column mb-auto text-center mt-5 sticky-top">
+        {data.map((e,i) => (
+          <li className={`nav-item mw-100 ${e[1] == "employees" && "active"}`} key={i}>
             <a href="#">
               <i className={e[0] + " position-relative"}>
                 {e[1] == "employees" && (
                   <span
-                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
                     style={{ fontSize: "0.3em" }}
                   >
                     3

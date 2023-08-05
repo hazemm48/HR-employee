@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import NavBar from "../Components/navBar.js";
 import SideBar from "../Components/sideBar.js";
-import EmployeeCard from "../Components/employeeCard.js";
+import EmployeeCard from "../Components/employee/employeeCard.js";
 import Search from "../Components/search.js";
 import Form from "../Components/form/form.js";
-import { data } from "../Components/employeeData.js";
+import { data } from "../Components/employee/employeeData.js";
 
 const Home = () => {
   const [showForm, setShowForm] = useState(false);

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import manImg from "../SiteAssets/images/male.jpg";
+import manImg from "../../SiteAssets/images/male.jpeg";
 
 const EmployeeCard = ({ data, setEmployeeData, employeeData, id }) => {
   let leftIcons = [
@@ -42,9 +42,10 @@ const EmployeeCard = ({ data, setEmployeeData, employeeData, id }) => {
             <div className="d-flex mt-3 justify-content-center left">
               {leftIcons.map((e, i) => (
                 <i
-                  class={e}
+                  className={e}
                   onClick={(e) => i == 2 && deleteEmployee(e)}
                   id={id}
+                  key={i}
                 />
               ))}
             </div>
@@ -65,8 +66,8 @@ const EmployeeCard = ({ data, setEmployeeData, employeeData, id }) => {
                   {data["attendance profile"]}
                 </label>
                 <div className="col-7 w-auto right">
-                  {rightIcons.map((e) => (
-                    <i class={e} />
+                  {rightIcons.map((e,i) => (
+                    <i className={e} key={i}/>
                   ))}
                 </div>
               </div>
