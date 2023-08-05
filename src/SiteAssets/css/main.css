@@ -6,15 +6,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f7f8f9;
 }
 
 main {
   height: 100vh;
-}
-
-.main-content {
-  background-color: #f7f8f9;
-  padding: 2em;
 }
 
 nav img {
@@ -58,8 +54,8 @@ nav img {
   font-size: 0.8em;
 }
 
-.employee-card img{
-  max-width:4.5em;
+.employee-card img {
+  max-width: 4.5em;
   max-height: 4.5em;
 }
 
@@ -129,7 +125,6 @@ nav img {
   -webkit-backdrop-filter: blur(3px);
   -moz-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-  
 }
 
 .form form {
@@ -192,7 +187,7 @@ nav img {
     font-size: 1em;
   }
 
-  .employee-card label{
+  .employee-card label {
     font-size: 0.8em;
   }
 }

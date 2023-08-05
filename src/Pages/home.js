@@ -16,7 +16,7 @@ function Home() {
 			<SideBar />
 			<div className="col-10 col-md-11 main">
 				<NavBar />
-				<div className="main-content">
+				<div className="main-content p-4">
 					<Search
 						setShowForm={setShowForm}
 						setSearchData={setSearchData}
