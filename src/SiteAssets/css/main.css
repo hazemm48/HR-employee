@@ -120,7 +120,7 @@ nav img {
 .form {
   position: absolute;
   top: 0;
-  z-index: 1021;
+  z-index: 1099;
   background-color: rgba(40, 104, 174, 0.43);
   -webkit-backdrop-filter: blur(3px);
   -moz-backdrop-filter: blur(3px);

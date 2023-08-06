@@ -2,7 +2,7 @@ import React from 'react';
 
 function SideBar() {
 	const data = [
-		['fa-solid fa-table-cells', 'dashboard'],
+		['fa-solid fa-table-cells-large', 'dashboard'],
 		['fa-solid fa-display', 'workplace'],
 		['fa-solid fa-mug-saucer', 'holidays'],
 		['fa-solid fa-user-group', 'employees'],

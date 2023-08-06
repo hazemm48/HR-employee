@@ -34,6 +34,7 @@ function EmployeeCard({ data, setEmployeeData, employeeData, id }) {
   const deleteEmployee = (e) => {
     employeeData.splice(e.target.id, 1);
     setEmployeeData([...employeeData]);
+    setToolTipDisplay('none');
   };
 
   const showToolTip = () => {
