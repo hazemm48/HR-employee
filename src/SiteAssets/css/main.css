@@ -163,6 +163,24 @@ nav img {
   background: var(--light-blue-color);
 }
 
+/* toolTip */
+
+.tooltip {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #eaeef0;
+  width: 20em;
+  right: -50%;
+}
+
+.tooltip .tooltip-inner {
+  color: var(--grey-color);
+  font-size: 0.8em;
+}
+
+.tooltip .tooltip-arrow::before {
+  border-bottom-color: white !important;
+}
+
 @media (min-width: 992px) {
   .form {
     padding: 12rem !important;
@@ -189,5 +207,9 @@ nav img {
 
   .employee-card label {
     font-size: 0.8em;
+  }
+
+  .tooltip {
+    width: 17em;
   }
 }

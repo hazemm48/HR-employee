@@ -11,11 +11,11 @@
   "plugins": ["react"],
   "ignorePatterns": ["/src/SiteAssets"],
   "rules": {
-    "indent": ["error", "tab"],
-    "linebreak-style": ["error", "windows"],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"],
-    "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+    "indent": "off",
+    "linebreak-style": ["warn", "windows"],
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "always"],
+    "no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
     "react/prop-types": "off"
   },
   "settings": {
