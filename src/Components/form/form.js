@@ -58,7 +58,7 @@ function Form({ setShowForm, setEmployeeData }) {
 				</div>
 				<FormHeader txt="Office Info" />
 				{formData('officeInfo').map((e, i) => (i == 3 ? (
-					<InputField label="Role" type="text" size="col-md-6" key="role" />
+					<InputField label={e[0]} type={e[1]} size={e[2]} key={e[0]} />
 				) : (
 					<SelectField label={e[0]} data={e[1]} size={e[2]} key={e[0]} />
 				)))}
