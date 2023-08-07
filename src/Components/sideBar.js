@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SideBar() {
+function SideBar({length}) {
 	const data = [
 		['fa-solid fa-table-cells-large', 'dashboard'],
 		['fa-solid fa-display', 'workplace'],
@@ -20,7 +20,7 @@ function SideBar() {
 										className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
 										style={{ fontSize: '0.3em' }}
 									>
-                  3
+                  {length}
 									</span>
 								)}
 							</i>

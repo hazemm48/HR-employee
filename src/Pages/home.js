@@ -13,7 +13,7 @@ function Home() {
 
 	return (
 		<main className="d-flex flex-wrap pe-2 col-12">
-			<SideBar />
+			<SideBar length={employeeData.length} />
 			<div className="col-10 col-md-11 main">
 				<NavBar />
 				<div className="main-content p-4">
