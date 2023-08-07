@@ -9,7 +9,7 @@ export const data = [
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -17,12 +17,12 @@ export const data = [
 		department: 'business development',
 		'direct Manager': 'Mohamed tarek',
 		email: 'hazem@gmail.com',
-		name: 'Hazem Mohamed',
+		name: 'Ahmed Mohamed',
 		office: 'arabic localizer',
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -30,12 +30,12 @@ export const data = [
 		department: 'business development',
 		'direct Manager': 'Mohamed tarek',
 		email: 'hazem@gmail.com',
-		name: 'Hazem Mohamed',
+		name: 'Youssef Mohamed',
 		office: 'arabic localizer',
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -48,7 +48,7 @@ export const data = [
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -61,7 +61,7 @@ export const data = [
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -74,7 +74,7 @@ export const data = [
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -87,7 +87,7 @@ export const data = [
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -100,7 +100,7 @@ export const data = [
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -113,7 +113,7 @@ export const data = [
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -126,7 +126,7 @@ export const data = [
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -139,7 +139,7 @@ export const data = [
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -152,7 +152,7 @@ export const data = [
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -165,7 +165,7 @@ export const data = [
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -178,7 +178,7 @@ export const data = [
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 	{
@@ -191,7 +191,7 @@ export const data = [
 		phone: '01234567899',
 		position: 'HR head',
 		role: 'employee',
-		'Start Date': '2022-08-12',
+		'start date': '2022-08-12',
 		workHome: 'on',
 	},
 ];

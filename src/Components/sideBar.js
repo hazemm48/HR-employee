@@ -1,6 +1,9 @@
 import React from 'react';
+import { useSelector } from "react-redux";
 
 function SideBar() {
+  const employees = useSelector((state) => state.employees.value);
+
 	const data = [
 		['fa-solid fa-table-cells-large', 'dashboard'],
 		['fa-solid fa-display', 'workplace'],
@@ -20,7 +23,7 @@ function SideBar() {
 										className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
 										style={{ fontSize: '0.3em' }}
 									>
-                  3
+                  {employees.length}
 									</span>
 								)}
 							</i>

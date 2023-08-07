@@ -3,7 +3,7 @@ export const formData = (type) => {
 		personalInfo: [
 			/* [label,type,size] */
 			['name', 'text', 'col-md-6'],
-			['start Date', 'date', 'col-md-6'],
+			['start date', 'date', 'col-md-6'],
 			['phone', 'number', 'col-md-6'],
 			['email', 'email', 'col-md-6'],
 		],

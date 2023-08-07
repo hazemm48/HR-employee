@@ -1,46 +1,48 @@
-import React, { useState } from 'react';
-import manImg from '../../SiteAssets/images/male.jpeg';
-import ToolTip from './toolTip.js';
+import React, { useState } from "react";
+import manImg from "../../SiteAssets/images/male.jpeg";
+import ToolTip from "./toolTip.js";
+import { useDispatch } from "react-redux";
+import { removeEmployee } from "../../features/employees.js";
 
-function EmployeeCard({ data, setEmployeeData, employeeData, id }) {
-  const [toolTipDisplay, setToolTipDisplay] = useState('none');
+function EmployeeCard({ data, id }) {
+  const [toolTipDisplay, setToolTipDisplay] = useState("none");
+  const dispatch = useDispatch();
 
   const leftIcons = [
-    'fa-solid fa-pen mx-1',
-    'fa-regular fa-circle-pause mx-1',
-    'fa-solid fa-trash mx-1',
+    "fa-solid fa-pen mx-1",
+    "fa-regular fa-circle-pause mx-1",
+    "fa-solid fa-trash mx-1",
   ];
 
   const rightIcons = [
-    'fa-solid fa-envelope mx-1 p-1',
-    'fa-solid fa-phone-flip mx-1 p-1',
-    'fa-solid fa-exclamation mx-1 p-1',
+    "fa-solid fa-envelope mx-1 p-1",
+    "fa-solid fa-phone-flip mx-1 p-1",
+    "fa-solid fa-exclamation mx-1 p-1",
   ];
 
   const attendanceColor = (e) => {
-    let color = '';
-    e == 'present'
-      ? (color = 'green')
-      : e == 'absent'
-      ? (color = 'red')
-      : e == 'weekend'
-      ? (color = 'blue')
-      : e == 'holiday'
-      ? (color = 'light-blue')
-      : (color = 'grey');
+    let color = "";
+    e == "present"
+      ? (color = "green")
+      : e == "absent"
+      ? (color = "red")
+      : e == "weekend"
+      ? (color = "blue")
+      : e == "holiday"
+      ? (color = "light-blue")
+      : (color = "grey");
     return color;
   };
 
   const deleteEmployee = (e) => {
-    employeeData.splice(e.target.id, 1);
-    setEmployeeData([...employeeData]);
-    setToolTipDisplay('none');
+    dispatch(removeEmployee(e.target.id));
+    setToolTipDisplay("none");
   };
 
   const showToolTip = () => {
-    toolTipDisplay == 'block'
-      ? setToolTipDisplay('none')
-      : setToolTipDisplay('block');
+    toolTipDisplay == "block"
+      ? setToolTipDisplay("none")
+      : setToolTipDisplay("block");
   };
 
   return (
@@ -70,15 +72,15 @@ function EmployeeCard({ data, setEmployeeData, employeeData, id }) {
               <div className="d-flex justify-content-between flex-wrap mt-2">
                 <label
                   className={`col-5 label-${attendanceColor(
-                    data['attendance profile']
+                    data["attendance profile"]
                   )} rounded-1 px-1`}
                 >
-                  {data['attendance profile']}
+                  {data["attendance profile"]}
                 </label>
                 <div className="col-7 w-auto right">
                   {rightIcons.map((e, i) => (
                     <i
-                      className={e + ' position-relative'}
+                      className={e + " position-relative"}
                       key={i}
                       onClick={showToolTip}
                     >

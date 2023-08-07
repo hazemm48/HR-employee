@@ -5,7 +5,7 @@ function ToolTip({ data,display }) {
     ['office', data.office],
     ['role', data.role],
     ['copied manager', data['direct Manager']],
-    ['joining date', data['Start Date']],
+    ['joining date', data['start date']],
     ['manager', data['direct Manager']],
   ];
 
