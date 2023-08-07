@@ -1,10 +1,10 @@
-import React from "react";
-import NavBar from "../Components/navBar.js";
-import SideBar from "../Components/sideBar.js";
-import EmployeeCard from "../Components/employee/employeeCard.js";
-import Search from "../Components/search.js";
-import Form from "../Components/form/form.js";
-import { useSelector } from "react-redux";
+import React from 'react';
+import NavBar from '../Components/navBar.js';
+import SideBar from '../Components/sideBar.js';
+import EmployeeCard from '../Components/employee/employeeCard.js';
+import Search from '../Components/search.js';
+import Form from '../Components/form/form.js';
+import { useSelector } from 'react-redux';
 
 function Home() {
   const employees = useSelector((state) => state.employees.value);

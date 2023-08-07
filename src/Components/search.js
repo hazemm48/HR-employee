@@ -1,7 +1,7 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
-import { searchEmployee, showForm } from "../features/employees.js";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { searchEmployee, showForm } from '../features/employees.js';
 
 function Search() {
   const dispatch = useDispatch();
@@ -24,7 +24,7 @@ function Search() {
           >
             <i
               className="fa-solid fa-magnifying-glass"
-              style={{ color: "#23aaeb" }}
+              style={{ color: '#23aaeb' }}
             />
           </span>
           <input

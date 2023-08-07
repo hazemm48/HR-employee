@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { data } from "../Components/employee/employeeData.js";
+import { createSlice } from '@reduxjs/toolkit';
+import { data } from '../Components/employee/employeeData.js';
 
 export const employeeSlice = createSlice({
-  name: "employees",
-  initialState: { value: data, searchData: "", showForm: false },
+  name: 'employees',
+  initialState: { value: data, searchData: '', showForm: false },
   reducers: {
     addEmployee: (state, action) => {
       state.value.push(action.payload);

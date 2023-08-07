@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 import {
   InputField,
   SelectField,
   FormHeader,
   ButtonField,
-} from "./formComponents.js";
-import { formData } from "./formData.js";
-import { useDispatch } from "react-redux";
-import { addEmployee, showForm } from "../../features/employees.js";
+} from './formComponents.js';
+import { formData } from './formData.js';
+import { useDispatch } from 'react-redux';
+import { addEmployee, showForm } from '../../features/employees.js';
 
 function Form() {
   const dispatch = useDispatch();
@@ -21,13 +21,13 @@ function Form() {
       data[pair[0]] = pair[1];
     }
     dispatch(addEmployee(data));
-    alert("employee added");
+    alert('employee added');
   };
 
   const btns = [
     /* [label,color,onClick] */
-    ["cancel", "#ff6a6a", () => dispatch(showForm(false)), "button"],
-    ["save", "#23aaeb", () => {}, "submit"],
+    ['cancel', '#ff6a6a', () => dispatch(showForm(false)), 'button'],
+    ['save', '#23aaeb', () => {}, 'submit'],
   ];
 
   return (
@@ -50,20 +50,20 @@ function Form() {
             />
             <button
               type="button"
-              onClick={() => document.getElementById("fileupload").click()}
+              onClick={() => document.getElementById('fileupload').click()}
             >
               Drag image here
             </button>
           </div>
           <div className="col-md-8 row">
-            {formData("personalInfo").map((e) => (
+            {formData('personalInfo').map((e) => (
               <InputField label={e[0]} type={e[1]} size={e[2]} key={e[0]} />
             ))}
           </div>
         </div>
 
         <FormHeader txt="Office Info" />
-        {formData("officeInfo").map((e, i) =>
+        {formData('officeInfo').map((e, i) =>
           i == 3 ? (
             <InputField label={e[0]} type={e[1]} size={e[2]} key="role" />
           ) : (
